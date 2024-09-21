@@ -1,0 +1,130 @@
+/* Container for the entire section */
+.pb-24 {
+  padding-bottom: 20px;
+}
+
+/* Section Title */
+h2 {
+  margin: 40px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+/* Flex container for icons */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* Reduced space between icons */
+}
+
+/* Each icon container */
+.flex div {
+  text-align: center;
+  width: calc(20% - 1rem); /* 5 icons per row */
+  padding: 0.5rem;
+  animation: float-up 4s ease-in-out infinite; /* Add floating animation */
+}
+
+/* Floating animation for icons */
+@keyframes float-up {
+  0% {
+    transform: translateY(0); /* Start at original position */
+  }
+  50% {
+    transform: translateY(-5px); /* Float up slightly */
+  }
+  100% {
+    transform: translateY(0); /* Return to original position */
+  }
+}
+
+@keyframes float-down {
+  0% {
+    transform: translateY(0); /* Start at original position */
+  }
+  50% {
+    transform: translateY(5px); /* Float down slightly */
+  }
+  100% {
+    transform: translateY(0); /* Return to original position */
+  }
+}
+
+/* Assigning different floating animations to odd/even icons */
+.flex div:nth-child(odd) {
+  animation: float-up 4s ease-in-out infinite; /* Smoother, slower animation */
+}
+
+.flex div:nth-child(even) {
+  animation: float-down 4s ease-in-out infinite; /* Smoother, slower animation */
+}
+
+/* Icons inside the div */
+.flex div svg {
+  font-size: 3rem; /* Adjust icon size for smaller icons */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect on icons - slightly enlarge the icons */
+.flex div svg:hover {
+  transform: scale(1.15); /* Slightly enlarge on hover */
+}
+
+/* Maintain 5 icons per row even on smaller screens */
+@media (max-width: 1024px) {
+  .flex div {
+    width: calc(20% - 0.5rem); /* Keep 5 icons per row for medium screens, reducing gap */
+  }
+}
+
+@media (max-width: 768px) {
+  .flex div {
+    width: calc(50% - 0.5rem); /* Keep 2 icons per row for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .flex div {
+    width: calc(100% - 0.5rem); /* 1 icon per row on extra small screens */
+  }
+}
+
+/* Colors for individual icons */
+.text-orange-600 { 
+  color: #FBBF24; /* Orange for HTML5 */
+}
+
+.text-blue-500 { 
+  color: #3B82F6; /* Blue for CSS3 */
+}
+
+.text-yellow-500 { 
+  color: #F59E0B; /* Yellow for JavaScript */
+}
+
+.text-cyan-400 { 
+  color: #22D3EE; /* Cyan for React */
+}
+
+.text-gray-900 {
+  color: #4e4646; /* Dark gray for Next.js */
+}
+
+.text-purple-500 {
+  color: #A855F7; /* Purple for Figma */
+}
+
+.text-green-500 {
+  color: #27d885; /* Adjusted color for MongoDB */
+}
+
+/* General style for SVG icons */
+.svg-icon {
+  width: 100%;
+  display: inline-block;
+  height: auto;
+}

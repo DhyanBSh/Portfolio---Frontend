@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    margin: 0 20px;
+    font-size: 18px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-details {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin: -40px 10px;
+}
+
+.footer-details img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.footer-details p {
+    font-size: 18px;
+    font-weight: 300;
+}

@@ -1,0 +1,88 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin: 80px 80px;
+  padding-top: 130px;
+  transition: margin 0.3s ease; /* Smooth margin transition */
+}
+
+.experience-title {
+  position: relative;
+}
+
+.experience-title h1 {
+  padding: 0px 30px;
+  font-size: 35px;
+  font-weight: 600;
+  transition: font-size 0.3s ease; /* Smooth font size transition */
+}
+
+.experience-container {
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+  gap: 50px;
+  transition: grid-template-columns 0.3s ease; /* Smooth transition for grid layout */
+}
+
+.experience-container img {
+  width: 100%; /* Use full width of the grid item */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.1s ease, border 0.1s ease, box-shadow 0.1s ease;
+  cursor: pointer;
+}
+
+.experience-container img:hover {
+  transform: scale(1.05);
+  border: 4px solid #00fff7;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 255, 247, 0.5); /* Add shadow for smoother effect */
+}
+
+@media (max-width: 1200px) {
+  .experience {
+    margin: 60px 40px; /* Adjust margins for smaller screens */
+    padding-top: 150px;
+  }
+
+  .experience-title h1 {
+    font-size: 30px; /* Smaller font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .experience {
+    margin: 40px 20px; /* Further reduce margins */
+    padding-top: 150px;
+  }
+
+  .experience-title h1 {
+    font-size: 25px; /* Smaller font size */
+    padding: 0px 20px;
+  }
+
+  .experience-container {
+    grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .experience {
+    gap: 30px; /* Reduce gap for small screens */
+  }
+
+  .experience-title h1 {
+    font-size: 22px; /* Smaller font size */
+    padding: 0px 10px;
+  }
+
+  .experience-container {
+    grid-template-columns: 1fr; /* Change to 1 column */
+  }
+
+}

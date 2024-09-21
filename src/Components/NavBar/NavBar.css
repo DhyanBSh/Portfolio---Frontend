@@ -1,0 +1,98 @@
+/* Base Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #021f2d;
+    padding: 10px -10px;
+}
+
+.navbar img {
+    margin: 0px 20px;
+}
+
+/* Hamburger menu icon for mobile */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: #00fff7;
+    cursor: pointer;
+}
+
+/* Menu Styles for larger screens */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    margin: 0px 30px;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.nav-menu li {
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-menu li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #00FFF7;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-menu li:hover::after {
+    width: 100%;
+}
+
+.nav-menu li.active::after {
+    width: 100%;
+}
+
+.nav-menu li p {
+    display: inline;
+}
+
+/* Hide the nav-menu and show hamburger icon on small screens */
+@media (max-width: 958px) {
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -30px;
+        height: 100%;
+        width: 40%;
+        background-color: rgba(2, 31, 45, 0.95); /* Adjust the last value for transparency */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        transition: transform 0.3s ease;
+        transform: translateX(100%); /* Hidden by default */
+    }
+    
+    .nav-menu.open {
+        transform: translateX(0); /* Show when open */
+    }
+
+    .nav-menu li {
+        font-size: 22px;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger on mobile */
+        position: absolute; /* Position it in the top right */
+        top: auto; /* Adjust as needed */
+        right: 30px; /* Adjust as needed */
+        z-index: 1001; /* Ensure it’s above the nav menu */
+    }
+}

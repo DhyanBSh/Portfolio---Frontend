@@ -1,0 +1,96 @@
+/* Container for the entire section */
+.pb-24 {
+    padding-bottom: 20px;
+  }
+  
+  /* Section Title */
+  .designing-tools-title {
+    margin: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    color: #ffffff;
+  }
+  
+  /* Flex container for design tool icons */
+  .designing-tools-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Reduced space between icons */
+  }
+  
+  /* Each design tool container */
+  .designing-tool {
+    text-align: center;
+    width: calc(20% - 1rem); /* 5 icons per row */
+    padding: 0.5rem;
+    animation: float-up 4s ease-in-out infinite; /* Add floating animation */
+  }
+  
+  /* Floating animation for icons */
+  @keyframes float-up {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px); /* Float up slightly */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Assigning different floating animations to odd/even icons */
+  .designing-tool:nth-child(odd) {
+    animation: float-up 4s ease-in-out infinite; /* Smoother, slower animation */
+  }
+  
+  .designing-tool:nth-child(even) {
+    animation: float-down 4s ease-in-out infinite; /* Smoother, slower animation */
+  }
+  
+  @keyframes float-down {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(5px); /* Float down slightly */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Icon images inside the design tool div */
+  .tool-icon {
+    width: 60px; /* Reduced size for smaller icons */
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect on design tool icons */
+  .tool-icon:hover {
+    transform: scale(1.15); /* Slightly enlarge on hover */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 1024px) {
+    .designing-tool {
+      width: calc(33.33% - 1rem); /* 3 icons per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .designing-tool {
+      width: calc(50% - 1rem); /* 2 icons per row on small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .designing-tool {
+      width: calc(100% - 1rem); /* 1 icon per row on extra small screens */
+    }
+  }
+  

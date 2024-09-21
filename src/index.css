@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #161513;
+    background-image: url('path_to_your_doodle_art_image.svg'); /* Add your doodle art background here */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, p {
+    margin: 0 0 10px;
+    line-height: 1.5;
+}
+
+.navbar, .footer {
+    background: rgba(22, 21, 19, 0.95); /* Transparent background for better visibility on doodle art */
+    padding: 10px 20px;
+}
+
+a {
+    color: #00fff7;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+button {
+    background-color: #00fff7;
+    color: #161513;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #00fff7;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.experience-container img {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.experience-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Add custom cursor styling if applicable */
+#custom-cursor {
+    width: 15px;
+    height: 15px;
+    background-color: #00fff7;
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+#cursor-border {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #00fff7;
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+/* Additional styling adjustments */
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: #ffffff;
+}
+
+p {
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .navbar, .footer {
+        padding: 10px;
+    }
+}
+

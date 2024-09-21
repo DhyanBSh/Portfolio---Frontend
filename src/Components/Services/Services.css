@@ -1,0 +1,241 @@
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+    margin: 120px 170px;
+    padding-top: 150px;
+    margin-top: 80px;
+    transition: margin 0.3s ease; /* Smooth margin transition */
+}
+
+.services.blur {
+    filter: blur(5px); /* Blur effect on background */
+}
+
+.services-title {
+    position: relative;
+}
+
+.services-title h1 {
+    font-size: 35px;
+    font-weight: 600;
+    padding: 0px 30px;
+    transition: font-size 0.3s ease; /* Smooth font size transition */
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.service h2 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    color: #00FFF7;
+    max-width: 300px;
+}
+
+.service p {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+    max-width: 300px;
+    color: #ffffff;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 80px;
+    gap: 25px;
+    transition: gap 0.3s ease; /* Smooth gap transition */
+}
+
+.service:hover {
+    border: 3px solid #00FFF7;
+    transform: scale(1.03);
+    transition: 0.4s;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+.modal-content {
+    position: relative;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 90%; /* Responsive width */
+    max-height: 90%; /* Ensure it doesn't overflow the viewport */
+    overflow: hidden; /* Hide overflow */
+}
+
+.modal-content img {
+    width: auto;
+    height: 80vh; /* Set height for portrait orientation */
+    max-height: 4%; /* Limit max height */
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px; /* Adjusted to be right on top */
+    right: 10px; /* Adjusted for smaller spacing */
+    width: 20px; /* Smaller size for the close icon */
+    height: 20px; /* Smaller size for the close icon */
+    cursor: pointer;
+}
+
+.send-message {
+    position: absolute;
+    bottom: 20px; /* Adjust to be above bottom */
+    left: 60%;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px; /* Rounded corners */
+    background: linear-gradient(267deg, rgb(12, 123, 167), #00FFF7); /* Gradient background */
+    font-size: 22px; /* Consistent font size */
+    cursor: pointer;
+    transition: 0.1s; /* Smooth transition */
+    padding: 10px 20px; /* Consistent padding */
+}
+
+.send-message:hover {
+    border: 2px solid #00FFF7; /* Border on hover */
+    transform: scale(1.03); /* Scale effect on hover */
+}
+
+.button-container {
+    display: flex;
+    margin-top: 50px; /* Space above buttons */
+}
+
+
+.download-button:hover {
+    transform: scale(1.03); /* Scale effect on hover */
+}
+
+.download-icon {
+    position: absolute;
+    top: 10px; /* Adjusted to be right on top */
+    right: 45px; /* Adjusted for smaller spacing */
+    width: 20px; /* Smaller size for the close icon */
+    height: 20px; /* Smaller size for the close icon */
+    cursor: pointer;
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .services {
+        margin: 100px 100px;
+    }
+
+    .services-title h1 {
+        font-size: 35px;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .service h2, .service p {
+        max-width: 280px;
+    }
+
+    .send-message {
+        padding: 10px 30px; /* Adjust padding for smaller screens */
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        margin: 80px 50px;
+        padding-top: 250px;
+    }
+
+    .services-title h1 {
+        font-size: 25px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .service {
+        padding: 30px;
+    }
+
+    .service h2, .service p {
+        max-width: 100%;
+    }
+
+    .download-button {
+        padding: 10px 20px; /* Adjust padding */
+        font-size: 18px; /* Smaller font size */
+    }
+
+    .send-message {
+        padding: 10px 20px; /* Adjust padding */
+        font-size: 18px; /* Smaller font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .services {
+        margin: 60px 20px;
+        padding-top: 150px;
+    }
+
+    .services-title h1 {
+        font-size: 22px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service {
+        padding: 20px;
+    }
+
+    .service h2 {
+        font-size: 22px;
+    }
+
+    .service p {
+        font-size: 16px;
+    }
+
+    .send-message {
+        padding: 10px 15px; /* Final adjustment for small screens */
+        font-size: 16px; /* Smallest font size */
+    }
+    
+}
