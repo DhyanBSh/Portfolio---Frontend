@@ -15,6 +15,17 @@ body {
     font-family: 'Outfit', sans-serif;
 }
 
+canvas {
+    position: fixed; /* Keeps the canvas fixed on the screen */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Covers the full width of the viewport */
+    height: 100vh; /* Covers the full height of the viewport */
+    z-index: -1; /* Ensures the canvas stays behind all other elements */
+    pointer-events: none; /* Prevents the canvas from blocking clicks */
+  }
+  
+
 html {
     scroll-behavior: smooth;
 }

@@ -6,16 +6,16 @@
     gap: 80px;
     margin: 120px 170px;
     padding-top: 150px;
-    margin-top: 80px;
-    transition: margin 0.3s ease; /* Smooth margin transition */
+    transition: margin 0.3s ease;
 }
 
 .services.blur {
-    filter: blur(5px); /* Blur effect on background */
+    filter: blur(10px); /* Blur effect on background */
 }
 
 .services-title {
     position: relative;
+    text-align: center;
 }
 
 .services-title h1 {
@@ -33,6 +33,7 @@
     padding: 40px;
     border-radius: 20px;
     border: 2px solid #ffffff;
+    text-align: center;
     transition: 0.4s;
     cursor: pointer;
 }
@@ -56,9 +57,14 @@
 .services-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     margin-bottom: 80px;
     gap: 25px;
     transition: gap 0.3s ease; /* Smooth gap transition */
+}
+
+.centered-service {
+    grid-column: 2 / 3;
 }
 
 .service:hover {
@@ -108,21 +114,22 @@
 }
 
 .send-message {
-    position: absolute;
-    bottom: 20px; /* Adjust to be above bottom */
-    left: 60%;
+    position:absolute;
+    bottom: 5px; /* Adjust to be above bottom */
     color: #ffffff;
+    right: 40px;
     border: none;
+    width: 200px;
     border-radius: 30px; /* Rounded corners */
     background: linear-gradient(267deg, rgb(12, 123, 167), #00FFF7); /* Gradient background */
     font-size: 22px; /* Consistent font size */
     cursor: pointer;
-    transition: 0.1s; /* Smooth transition */
+    transition: 0.3s; /* Smooth transition */
     padding: 10px 20px; /* Consistent padding */
 }
 
 .send-message:hover {
-    border: 2px solid #00FFF7; /* Border on hover */
+    color: #ffffff;
     transform: scale(1.03); /* Scale effect on hover */
 }
 
@@ -130,7 +137,6 @@
     display: flex;
     margin-top: 50px; /* Space above buttons */
 }
-
 
 .download-button:hover {
     transform: scale(1.03); /* Scale effect on hover */
@@ -144,8 +150,6 @@
     height: 20px; /* Smaller size for the close icon */
     cursor: pointer;
 }
-
-
 
 /* Responsive Adjustments */
 @media (max-width: 1200px) {
@@ -164,6 +168,10 @@
 
     .service h2, .service p {
         max-width: 280px;
+    }
+
+    .centered-service {
+        grid-column: auto;
     }
 
     .send-message {
@@ -187,6 +195,10 @@
         gap: 40px;
     }
 
+    .centered-service {
+        grid-column: auto;
+    }
+
     .service {
         padding: 30px;
     }
@@ -203,6 +215,9 @@
     .send-message {
         padding: 10px 20px; /* Adjust padding */
         font-size: 18px; /* Smaller font size */
+        max-width: 170px;
+        left: 50%; /* Move the button to the left */
+        bottom: 20px; /* Optionally adjust bottom spacing */
     }
 }
 
@@ -221,6 +236,10 @@
         gap: 20px;
     }
 
+    .centered-service {
+        grid-column: auto;
+    }
+
     .service {
         padding: 20px;
     }
@@ -232,10 +251,9 @@
     .service p {
         font-size: 16px;
     }
-
     .send-message {
-        padding: 10px 15px; /* Final adjustment for small screens */
-        font-size: 16px; /* Smallest font size */
+        left: 50%; /* Move the button to the left */
+        bottom: 10px; /* Optionally adjust bottom spacing */
     }
-    
+
 }

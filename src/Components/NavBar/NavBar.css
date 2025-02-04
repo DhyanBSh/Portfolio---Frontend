@@ -13,6 +13,7 @@
 
 .navbar img {
     margin: 0px 20px;
+    max-width: 200px;
 }
 
 /* Hamburger menu icon for mobile */
@@ -94,5 +95,24 @@
         top: auto; /* Adjust as needed */
         right: 30px; /* Adjust as needed */
         z-index: 1001; /* Ensure it’s above the nav menu */
+    }
+
+    .navbar img {
+        margin: 0px 10px;
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 585px) {
+    .navbar img {
+        margin: 0px 8px;
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar img {
+        margin: 0px 5px;
+        max-width: 130px;
     }
 }

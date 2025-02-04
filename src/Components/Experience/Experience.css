@@ -1,88 +1,231 @@
 .experience {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 60px;
-  margin: 80px 80px;
-  padding-top: 130px;
-  transition: margin 0.3s ease; /* Smooth margin transition */
-}
-
-.experience-title {
-  position: relative;
-}
-
-.experience-title h1 {
-  padding: 0px 30px;
-  font-size: 35px;
-  font-weight: 600;
-  transition: font-size 0.3s ease; /* Smooth font size transition */
-}
-
-.experience-container {
-  margin-top: 0px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+  flex-direction: column;
   gap: 50px;
-  transition: grid-template-columns 0.3s ease; /* Smooth transition for grid layout */
-}
-
-.experience-container img {
-  width: 100%; /* Use full width of the grid item */
-  height: auto; /* Maintain aspect ratio */
-  transition: transform 0.1s ease, border 0.1s ease, box-shadow 0.1s ease;
+  margin: 120px 170px;
+  padding-top: 120px;
+  transition: 0.4s;
   cursor: pointer;
 }
 
-.experience-container img:hover {
-  transform: scale(1.05);
-  border: 4px solid #00fff7;
+.experience-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.experience-title h1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.experience-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+}
+
+.experience-image-container {
+  flex: 0 0 50%; /* Increase the width of the left image */
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 580px; /* Set the height for the image */
+}
+
+.experience-main-image {
+  max-width: 100%;
+  height: auto;
   border-radius: 15px;
-  box-shadow: 0px 10px 20px rgba(0, 255, 247, 0.5); /* Add shadow for smoother effect */
+  animation: floatAnimation 3s ease-in-out infinite; /* Apply the floating animation */
+  transition: transform 0.3s ease-in-out; /* Optional: Smooth transition for hover effect */
 }
 
-@media (max-width: 1200px) {
-  .experience {
-    margin: 60px 40px; /* Adjust margins for smaller screens */
-    padding-top: 150px;
+/* Floating animation */
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
   }
-
-  .experience-title h1 {
-    font-size: 30px; /* Smaller font size */
+  50% {
+    transform: translateY(-10px); /* Move 10px up */
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
-@media (max-width: 768px) {
-  .experience {
-    margin: 40px 20px; /* Further reduce margins */
-    padding-top: 150px;
-  }
+.experience-cards {
+  flex: 0 0 50%; /* Decrease the width of the right cards */
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  margin-right: 20%;
+  gap: 15px;
+  height: 500px; /* Set the height of the cards to match the height of the image */
+}
 
-  .experience-title h1 {
-    font-size: 25px; /* Smaller font size */
-    padding: 0px 20px;
-  }
+.experience-card {
+  background-color: #222;
+  border-radius: 30px;
+  padding: 30px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid #ffffff;
+  position: relative; /* To position the overlay */
+  transition: transform 0.3s ease;
+  height: calc(100% / 6); /* Distribute the height equally for each card */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.experience-card h2 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 500;
+  color: #00FFF7;
+  z-index: 2; /* Ensure it stays above the overlay */
+}
+
+.experience-card:hover {
+  transform: scale(1.05);
+  border-color: #00FFF7;
+}
+
+.experience-card:hover .experience-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.experience-card p {
+  font-size: 16px;
+  padding: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
   .experience-container {
-    grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
+    flex-direction: column; /* Stack the left image and right cards on medium screens */
+    align-items: center;
   }
 
+  .experience-image-container {
+    width: 70%; /* Image takes up more space on medium screens */
+    margin-bottom: 30px;
+    height: 450px; /* Adjust height */
+  }
 
+  .experience-cards {
+    width: 80%;
+    height: auto; /* Allow dynamic height adjustment */
+  }
+
+  .experience-card {
+    padding: 20px;
+  }
+
+  .experience-title h1 {
+    font-size: 30px; /* Adjust title font size for smaller screens */
+  }
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+  .experience-container {
+    flex-direction: column; /* Stack the left image and right cards on small screens */
+    align-items: center;
+  }
+
+  .experience-image-container {
+    width: 80%; /* Image takes up more space on smaller screens */
+    margin-bottom: 30px;
+    height: 400px; /* Adjust height on smaller screens */
+  }
+
+  .experience-cards {
+    width: 90%; /* Cards take up more width on mobile */
+    height: auto; /* Allow dynamic height adjustment */
+  }
+
+  .experience-card {
+    padding: 15px;
+  }
+
+  .experience-title h1 {
+    font-size: 25px; /* Smaller title font for mobile */
+  }
+}
+
+@media (max-width: 700px) {
+  .experience-container {
+    flex-direction: column; /* Stack the left image and right cards on small screens */
+    align-items: center;
+  }
+
+  .experience-image-container {
+    min-width: 400px;
+    margin-bottom: 30px;
+    height: 400px; /* Adjust height on smaller screens */
+  }
+
+  .experience-cards {
+    width: 300px; /* Cards take up more width on mobile */
+    height: auto; /* Allow dynamic height adjustment */
+  }
+
+  .experience-card {
+    padding: 10px;
+  }
+
+  .experience-title h1 {
+    font-size: 25px; /* Smaller title font for mobile */
+  }
+
+  .experience-card h2 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 500;
+    color: #00FFF7;
+    z-index: 2; /* Ensure it stays above the overlay */
+  }
+  
 }
 
 @media (max-width: 480px) {
-  .experience {
-    gap: 30px; /* Reduce gap for small screens */
+  .experience-container {
+    flex-direction: column; /* Stack the left image and right cards on small screens */
+    align-items: center;
+  }
+
+  .experience-image-container {
+    width: 500%; /* Image takes up more space on smaller screens */
+    margin-bottom: 30px;
+    height: 400px; /* Adjust height on smaller screens */
+  }
+
+  .experience-cards {
+    width: 300px; /* Cards take up more width on mobile */
+    height: auto; /* Allow dynamic height adjustment */
+  }
+
+  .experience-card {
+    padding: 10px;
   }
 
   .experience-title h1 {
-    font-size: 22px; /* Smaller font size */
-    padding: 0px 10px;
+    font-size: 25px; /* Smaller title font for mobile */
   }
 
-  .experience-container {
-    grid-template-columns: 1fr; /* Change to 1 column */
+  .experience-card h2 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 500;
+    color: #00FFF7;
+    z-index: 2; /* Ensure it stays above the overlay */
   }
-
+  
 }

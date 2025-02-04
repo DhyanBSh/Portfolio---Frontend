@@ -15,7 +15,9 @@
 }
 
 .footer-details img {
-    max-width: 200px;
+    margin: 10px 10px;
+    margin-left: -10px;
+    max-width: 150px;
     border-radius: 50%;
 }
 
@@ -23,3 +25,28 @@
     font-size: 18px;
     font-weight: 300;
 }
+
+@media (max-width: 480px) {
+
+    .footer-details {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center; 
+        margin: -40px 10px;
+    }
+    
+    .footer-details img {
+        margin: 10px 20px;
+        margin-left: -15px;
+        max-width: 120px;
+        border-radius: 50%;
+    }
+    
+    .footer-details p {
+        text-align: right;
+        font-size: 12px;
+        font-weight: 300;
+        padding-top: 20px;
+    }
+  }

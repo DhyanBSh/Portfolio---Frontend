@@ -56,7 +56,7 @@ const Contact = () => {
       name,
       email,
       message,
-      access_key: "e8974bcf-7f73-4985-ba16-9378da071240",
+      access_key: "158987cd-4526-4858-9c8e-8a9338a4f5d3",
     };
     const json = JSON.stringify(object);
 
@@ -78,17 +78,7 @@ const Contact = () => {
     }
   };
 
-  // Function to handle button hover
-  const handleButtonHover = () => {
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!name || !message || !emailPattern.test(email)) {
-      setMoveButton(true); // Move the button if form is invalid
-    }
-  };
 
-  const handleMouseLeave = () => {
-    setMoveButton(false); // Reset button position on mouse leave
-  };
 
   return (
     <div id='Contact' className='contact'>
@@ -97,7 +87,7 @@ const Contact = () => {
       </div>
 
       <div className="contact-section">
-        <div className="contect-left">
+        <div className="contact-left">
           <h1>Let's talk...</h1>
           <p>Let’s Create Something Great Together!</p>
           <p>Feel free to reach out for any inquiries, collaborations, or just to say hello. I’d love to hear from you!</p>
@@ -112,7 +102,7 @@ const Contact = () => {
               <img src={location_icon} alt="Location" /><p>Rathmalana, Sri Lanka</p>
             </div>
             <div className="details">
-              <a href="https://github.com/dhyanbhashitha" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/DhyanBSh" target="_blank" rel="noopener noreferrer">
                 <img src={github_icon} alt="Github" /><p>Github</p>
               </a>
             </div>
@@ -148,9 +138,7 @@ const Contact = () => {
 
           <button
             type='submit'
-            className={`contact-submit ${moveButton ? 'move' : ''}`} // Add conditional class
-            onMouseEnter={handleButtonHover}
-            onMouseLeave={handleMouseLeave}
+            className={"contact-submit"}
           >
             Submit
           </button>

@@ -1,26 +1,28 @@
 import React, { useState } from 'react';
 import './Services.css';
-import closeIcon from '../../assets/close.png'; // Replace with your close icon path
-import downloadIcon from '../../assets/download.png'; // Replace with your download icon path
+import closeIcon from '../../assets/close.png';
+import downloadIcon from '../../assets/download.png';
 
-import serviceImageWeb from '../../assets/WebDesignPackages.png'; // Replace with actual images for services
+import serviceImageWeb from '../../assets/WebDesignPackages.png';
 import serviceImageUi from '../../assets/UiDesignPackages.png';
 import serviceImageLogo from '../../assets/LogoDesignPackages.png';
 import serviceImagePoster from '../../assets/Poster_BannerDesignPackages.png';
 import serviceImageEvent from '../../assets/EventDesignPackages.png';
 import serviceImageVideo from '../../assets/VideoEditingPackages.png';
+import serviceImageProduct from '../../assets/ProductDesignPackages.png';
 
 const Services = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
 
   const services = [
-    { title: 'Web Development', description: 'Full stack web development', img: serviceImageWeb },
-    { title: 'UI Designs', description: 'UI designs for web & mobile applications', img: serviceImageUi },
-    { title: 'Logo Designs', description: 'Crafting unique, memorable logos...', img: serviceImageLogo },
-    { title: 'Poster / Banner Designs', description: 'Creating impactful flyers...', img: serviceImagePoster },
-    { title: 'Event Flyer Designs', description: 'Capturing the greatest moments...', img: serviceImageEvent },
-    { title: 'Video Editing', description: 'Producing creative, high-quality videos...', img: serviceImageVideo },
+    { title: 'Web Development', description: 'Full stack web development', img: serviceImageWeb , pdfUrl: "https://drive.google.com/file/d/1w3iN1llEEfqAXQYETh8X_knv_bAFXx8j/view?usp=sharing"},
+    { title: 'UI Designs', description: 'UI designs for web & mobile applications', img: serviceImageUi , pdfUrl: "https://drive.google.com/file/d/1myFWuvhWonfLfv197D-tPrDqkUm-vGnz/view?usp=sharing"},
+    { title: 'Logo Designs', description: 'Crafting unique, memorable logos...', img: serviceImageLogo , pdfUrl: "https://drive.google.com/file/d/1iCsEi_HgnleRXIiCRpbJJFhnSKwEvTzQ/view?usp=sharing"},
+    { title: 'Poster / Banner Designs', description: 'Creating impactful flyers...', img: serviceImagePoster , pdfUrl: "https://drive.google.com/file/d/14A25uTlBPvr97PdPN6gNaMcEZumTe2qZ/view?usp=sharing"},
+    { title: 'Event Flyer Designs', description: 'Capturing the greatest moments...', img: serviceImageEvent , pdfUrl: "https://drive.google.com/file/d/1U38mhSDLD50gCSxl3pxj5dN6AV2VDOd1/view?usp=sharing"},
+    { title: 'Video Editing', description: 'Producing creative, high-quality videos...', img: serviceImageVideo , pdfUrl: "https://drive.google.com/file/d/195L9-nsEUA_n1YeKy1ReKzlW-cWkSc0E/view?usp=sharing"},
+    { title: 'Product Designs', description: 'Producing creative, 3D models...', img: serviceImageProduct , pdfUrl: "https://drive.google.com/file/d/1ROhcPBFNgHrCbTqqcrvPJfdNZvW4r43k/view?usp=sharing"},
   ];
 
   const handleServiceClick = (service) => {
@@ -34,33 +36,49 @@ const Services = () => {
   };
 
   const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = selectedService.img; // Use the URL of the image
-    link.download = `${selectedService.title}.png`; // Set the desired download name
-    link.click();
+    if (selectedService) {
+      const link = document.createElement('a');
+      link.href = selectedService.pdfUrl;
+      link.download = `${selectedService.title}.pdf`;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
   };
 
   const scrollToContact = () => {
-    const contactSection = document.getElementById('Contact'); // Assuming the contact section has this ID
+    const contactSection = document.getElementById('Contact');
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
-      handleCloseModal(); // Close the modal after scrolling
+      handleCloseModal();
     }
   };
 
   return (
-    <div id='Services' className={`services`}>
+    <div id='Services' className="services">
       <div className="services-title">
         <h1>My Services</h1>
       </div>
 
       <div className="services-container">
-        {services.map((service, index) => (
-          <div key={index} className="service" onClick={() => handleServiceClick(service)}>
-            <h2>{service.title}</h2>
-            <p>{service.description}</p>
-          </div>
-        ))}
+        {services.map((service, index) => {
+          // If it's the last row with only one service, center it
+          const isLastRow = index >= Math.floor(services.length / 3) * 3;
+          const isSingleItemInRow = isLastRow && (services.length % 3 === 1) && index === services.length - 1;
+
+          return (
+            <div
+              key={index}
+              className={`service ${isSingleItemInRow ? "centered-service" : ""}`}
+              onClick={() => handleServiceClick(service)}
+            >
+              <h2>{service.title}</h2>
+              <p>{service.description}</p>
+            </div>
+          );
+        })}
       </div>
 
       {modalOpen && (

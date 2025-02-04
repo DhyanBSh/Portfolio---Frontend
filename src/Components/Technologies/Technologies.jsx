@@ -1,5 +1,6 @@
 import React from "react";
 import "./Technologies.css";
+
 import { FaHtml5 } from "react-icons/fa"; // HTML5 icon
 import { FaCss3Alt } from "react-icons/fa"; // CSS3 icon
 import { DiJavascript1 } from "react-icons/di"; // JavaScript icon

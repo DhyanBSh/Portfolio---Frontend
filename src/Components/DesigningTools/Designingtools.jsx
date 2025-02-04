@@ -16,7 +16,7 @@ const DesigningTools = () => {
       alt: "Lightroom",
     },
     {
-      src: "https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg",
+      src: "https://1000logos.net/wp-content/uploads/2020/03/Canva-icon.png",
       alt: "Canva",
     },
     {
@@ -30,6 +30,10 @@ const DesigningTools = () => {
     {
       src: "https://upload.wikimedia.org/wikipedia/commons/9/90/DaVinci_Resolve_17_logo.svg",
       alt: "DaVinci Resolve",
+    },
+    {
+      src: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg",
+      alt: "Blender",
     },
   ];
 

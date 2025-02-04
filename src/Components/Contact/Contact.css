@@ -19,13 +19,13 @@
     gap: 150px;
 }
 
-.contect-left {
+.contact-left {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.contect-left h1 {
+.contact-left h1 {
     font-size: 40px;
     font-weight: 600;
     background: linear-gradient(267deg, rgb(12, 123, 167), #00FFF7);
@@ -34,7 +34,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-.contect-left p {
+.contact-left p {
     max-width: 550px;
     color: #ffffff;
     font-size: 20px;
@@ -91,9 +91,11 @@
 
 .contact-right {
     display: flex;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0);
     flex-direction: column;
     align-items: flex-start; /* Change to flex-start for alignment */
-    gap: 30px;
+    gap: 20px;
+    background-color: #00000000;
 }
 
 .contact-right label {
@@ -107,7 +109,7 @@
     height: 60px;
     padding-left: 20px;
     border-radius: 15px;
-    background: #32323c;
+    background: #2d2d31;
     color: #ffffff;
     font-size: 20px;
     font-family: Outfit;
@@ -117,7 +119,7 @@
     width: 500px;
     padding: 20px;
     border-radius: 15px;
-    background: #32323c;
+    background: #2d2d31;
     color: #ffffff;
     font-size: 20px;
     font-family: Outfit;
@@ -129,15 +131,17 @@
     border-radius: 30px;
     background: linear-gradient(267deg, rgb(12, 123, 167), #00FFF7);
     font-size: 22px;
-    padding: 15px 40px;
+    width: 200px;
+    padding: 15px 30px;
     cursor: pointer;
     transition: 0.3s;
-    align-self: flex-end; /* Aligns the button to the right */
+    align-self: auto;
 }
 
 .contact-submit:hover {
     transform: scale(1.05);
     transition: 0.3s;
+    color: #ffffff;
 }
 
 /* Responsive adjustments */
@@ -150,7 +154,7 @@
         gap: 100px;
     }
 
-    .contect-left h1 {
+    .contact-left h1 {
         font-size: 35px;
     }
 
@@ -174,11 +178,11 @@
         gap: 50px;
     }
 
-    .contect-left h1 {
+    .contact-left h1 {
         font-size: 30px;
     }
 
-    .contect-left p {
+    .contact-left p {
         font-size: 18px;
         max-width: 100%;
         text-align: center;
@@ -198,8 +202,9 @@
         font-size: 25px;
     }
 
-    .contect-left h1 {
-        font-size: 25px;
+    .contact-left h1 {
+        font-size: 30px;
+        padding-left:10px;
     }
 
     .contact-right input, .contact-right textarea {
@@ -210,6 +215,16 @@
         padding: 15px 40px;
         font-size: 18px;
     }
+
+    .contact-left p {
+        max-width: 550px;
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 35px;
+        padding-left:10px;
+        text-align: left;
+    }
+
 }
 
 .error-message {
@@ -224,37 +239,3 @@
     margin-top: 10px;
   }
   
-  /* Existing styles above */
-
-.contact-submit.move {
-    position: relative;
-    transform: translateX(150px); /* Move the button to the right */
-    transition: transform 0.3s ease;
-}
-
-/* Optionally, you can add a hover effect on the moved button */
-.contact-submit.move:hover {
-    transform: translateX(130px); /* Slight adjustment on hover */
-}
-
-/* Existing styles above */
-
-.contact-submit.move-left {
-    position: relative;
-    transform: translateX(-150px); /* Move the button to the left */
-    pointer-events: none; /* Prevent interaction */
-    transition: transform 0.3s ease;
-}
-
-.contact-submit.move-right {
-    position: relative;
-    transform: translateX(150px); /* Move the button to the right */
-    pointer-events: none; /* Prevent interaction */
-    transition: transform 0.3s ease;
-}
-
-/* Optionally, you can add a hover effect on the moved button */
-.contact-submit.move-left:hover,
-.contact-submit.move-right:hover {
-    transform: none; /* Prevent further movement */
-}
