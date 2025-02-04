@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import Technologies from "../Technologies/Technologies";
-import DesigningTools from "../Designingtools/Designingtools";
+import DesigningTools from "../DesigningTools/DesigningTools";
 
 const About = () => {
   return (
