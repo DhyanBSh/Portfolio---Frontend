@@ -3,6 +3,7 @@ import "./About.css";
 import Technologies from "../Technologies/Technologies";
 import DesigningTools from "../DesigningTools/DesigningTools";
 
+
 const About = () => {
   return (
     <div id="AboutMe" className="about" data-cursor="pointer2">
