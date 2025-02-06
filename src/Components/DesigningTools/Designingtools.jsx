@@ -1,49 +1,25 @@
 import React from "react";
 import "./DesigningTools.css";
 
-const DesigningTools = () => {
-  const tools = [
-    {
-      src: "https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg",
-      alt: "Photoshop",
-    },
-    {
-      src: "https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg",
-      alt: "Illustrator",
-    },
-    {
-      src: "https://upload.wikimedia.org/wikipedia/commons/b/b6/Adobe_Photoshop_Lightroom_CC_logo.svg",
-      alt: "Lightroom",
-    },
-    {
-      src: "https://1000logos.net/wp-content/uploads/2020/03/Canva-icon.png",
-      alt: "Canva",
-    },
-    {
-      src: "https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg",
-      alt: "Premiere Pro",
-    },
-    {
-      src: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg",
-      alt: "After Effects",
-    },
-    {
-      src: "https://upload.wikimedia.org/wikipedia/commons/9/90/DaVinci_Resolve_17_logo.svg",
-      alt: "DaVinci Resolve",
-    },
-    {
-      src: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg",
-      alt: "Blender",
-    },
-  ];
+const tools = [
+  { src: "/photoshop.svg", alt: "Photoshop" },
+  { src: "/illustrator.svg", alt: "Illustrator" },
+  { src: "/lightroom.svg", alt: "Lightroom" },
+  { src: "/canva.svg", alt: "Canva" },
+  { src: "/premiere-pro.svg", alt: "Premiere Pro" },
+  { src: "/after-effects.svg", alt: "After Effects" },
+  { src: "/davinci-resolve.svg", alt: "DaVinci Resolve" },
+  { src: "/blender.svg", alt: "Blender" },
+];
 
+const DesigningTools = () => {
   return (
     <div className="pb-24">
       <h2 className="designing-tools-title">Designing Tools</h2>
-      <div className="designing-tools-icons">
+      <div className="flex flex-wrap items-center justify-center gap-4">
         {tools.map((tool, index) => (
-          <div key={index} className="designing-tool">
-            <img src={tool.src} alt={tool.alt} className="tool-icon" />
+          <div key={index} className="p-4">
+            <img src={tool.src} alt={tool.alt} className="w-12 h-12" />
           </div>
         ))}
       </div>
