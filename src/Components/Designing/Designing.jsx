@@ -12,7 +12,7 @@ const tools = [
   { src: "/blender.svg", alt: "Blender" },
 ];
 
-const DesigningTools = () => {
+const Designing = () => {
   return (
     <div className="pb-24">
       <h2 className="designing-tools-title">Designing Tools</h2>
@@ -27,4 +27,4 @@ const DesigningTools = () => {
   );
 };
 
-export default DesigningTools;
+export default Designing;

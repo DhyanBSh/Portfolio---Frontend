@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import Technologies from "../Technologies/Technologies";
-import DesigningTools from "../DesigningTools/DesigningTools";
+import Designing from "../Designing/Designing";
 
 
 const About = () => {
@@ -66,7 +66,7 @@ const About = () => {
         </div>
 
         <div>
-          <DesigningTools />
+          <Designing />
         </div>
 
         <div className="about-skills">
