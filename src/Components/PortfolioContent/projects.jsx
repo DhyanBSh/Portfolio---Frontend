@@ -363,6 +363,7 @@ product-designing
     // Simulate loading dummy data (no API call)
     setProjects(dummyProjects);
     setLoading(false);
+    window.scrollTo(0, 0); // Scroll to the top when the component loads
   }, []);
 
   const filteredProjects = projects.filter(

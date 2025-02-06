@@ -210,7 +210,12 @@
     max-width: 150px;
   }
  
- 
+  .back-button-container {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 1000; /* Ensure it stays above other content */
+  }
 }
 
 /* Extra Small Mobile View */
