@@ -15,9 +15,9 @@ const CursorEffect = () => {
 
     // Adjust points count for mobile view
     const isMobile = window.innerWidth <= 768; // You can adjust this threshold if needed
-    const pointsCount = isMobile ? 40 : 80; // Reduce points on mobile
-    const pointSize = 2;
-    const lineDistance = 150;
+    const pointsCount = isMobile ? 40 : 60; // Reduce points on mobile
+    const pointSize = 1;
+    const lineDistance = 80;
 
     // Points array
     const points = Array.from({ length: pointsCount }).map(() => ({
