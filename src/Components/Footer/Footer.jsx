@@ -10,7 +10,7 @@ const Footer = () => {
         <hr/>
             <div className="footer-details">
                 <img src={logo} alt="logo" />
-                <p>© 2024 - Dhyan Bhashitha. All rights reserved.</p>
+                <p>© 2025 - Dhyan Bhashitha. All rights reserved.</p>
             </div>
     </div>
   )
