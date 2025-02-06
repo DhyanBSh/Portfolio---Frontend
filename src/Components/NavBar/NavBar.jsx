@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './NavBar.css';
-import logo from '../../assets/Dhyanlogo.svg';
+import logo from '/Dhyanlogo.svg';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Add icons for the hamburger menu
 
 const NavBar = ({ sectionsRef }) => {

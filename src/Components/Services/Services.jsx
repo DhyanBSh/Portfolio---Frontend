@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import './Services.css';
-import closeIcon from '../../assets/close.png';
-import downloadIcon from '../../assets/download.png';
+import closeIcon from '/close.png';
+import downloadIcon from '/download.png';
 
-import serviceImageWeb from '../../assets/WebDesignPackages.png';
-import serviceImageUi from '../../assets/UiDesignPackages.png';
-import serviceImageLogo from '../../assets/LogoDesignPackages.png';
-import serviceImagePoster from '../../assets/Poster_BannerDesignPackages.png';
-import serviceImageEvent from '../../assets/EventDesignPackages.png';
-import serviceImageVideo from '../../assets/VideoEditingPackages.png';
-import serviceImageProduct from '../../assets/ProductDesignPackages.png';
+import serviceImageWeb from '/WebDesignPackages.png';
+import serviceImageUi from '/UiDesignPackages.png';
+import serviceImageLogo from '/LogoDesignPackages.png';
+import serviceImagePoster from '/Poster_BannerDesignPackages.png';
+import serviceImageEvent from '/EventDesignPackages.png';
+import serviceImageVideo from '/VideoEditingPackages.png';
+import serviceImageProduct from '/ProductDesignPackages.png';
 
 const Services = () => {
   const [modalOpen, setModalOpen] = useState(false);

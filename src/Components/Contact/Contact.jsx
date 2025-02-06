@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './Contact.css';
-import mail_icon from '../../assets/mail_icon.svg';
-import location_icon from '../../assets/location_icon.svg';
-import call_icon from '../../assets/call_icon.svg';
-import github_icon from '../../assets/github.svg';
-import linkedin_icon from '../../assets/linkedin.svg';
-import instagram_icon from '../../assets/instagram.svg';
-import facebook_icon from '../../assets/facebook.svg';
+import mail_icon from '/mail_icon.svg';
+import location_icon from '/location_icon.svg';
+import call_icon from '/call_icon.svg';
+import github_icon from '/github.svg';
+import linkedin_icon from '/linkedin.svg';
+import instagram_icon from '/instagram.svg';
+import facebook_icon from '/facebook.svg';
 
 const Contact = () => {
   const [errorMessage, setErrorMessage] = useState('');

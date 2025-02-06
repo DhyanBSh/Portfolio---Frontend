@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import logo from '../../assets/Dhyanlogo.svg'
+import logo from '/Dhyanlogo.svg'
 
 
 const Footer = () => {

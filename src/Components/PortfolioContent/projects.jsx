@@ -2,41 +2,41 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./projects.css";
 
-import logoImage from "../../assets/Dhyanlogo.svg";
+import logoImage from "/Dhyanlogo.svg";
 
 //Project Images
-import PixelWeb from "../../assets/PixelWeb.svg";
-import BandaCurry from "../../assets/BandaCurry.svg";
+import PixelWeb from "/PixelWeb.svg";
+import BandaCurry from "/BandaCurry.svg";
 
-import BabybobLogo from "../../assets/BabybobLogo.svg";
-import BULogo from "../../assets/BULogo.svg";
-import DramaLogo from "../../assets/DramaLogo.svg";
-import IntimateLogo from "../../assets/IntimateLogo.svg";
-import PhFLogo from "../../assets/PhFLogo.svg";
-import PMIELogo from "../../assets/PMIELogo.svg";
+import BabybobLogo from "/BabybobLogo.svg";
+import BULogo from "/BULogo.svg";
+import DramaLogo from "/DramaLogo.svg";
+import IntimateLogo from "/IntimateLogo.svg";
+import PhFLogo from "/PhFLogo.svg";
+import PMIELogo from "/PMIELogo.svg";
 
-import ChocoBanner from "../../assets/ChocoBanner.svg";
-import BusinessFlyers from "../../assets/BusinessFlyers.svg";
-import ClassFlyers from "../../assets/ClassFlyers.svg";
-import Magazines from "../../assets/Magazines.svg";
-import SimpleEvents from "../../assets/SimpleEvents.svg";
-import SpecialDays from "../../assets/SpecialDays.svg";
-import SpecialEvents from "../../assets/SpecialEvents.svg";
+import ChocoBanner from "/ChocoBanner.svg";
+import BusinessFlyers from "/BusinessFlyers.svg";
+import ClassFlyers from "/ClassFlyers.svg";
+import Magazines from "/Magazines.svg";
+import SimpleEvents from "/SimpleEvents.svg";
+import SpecialDays from "/SpecialDays.svg";
+import SpecialEvents from "/SpecialEvents.svg";
 
-import Events from "../../assets/Events.svg";
-import Files from "../../assets/Files.svg";
-import Invitations from "../../assets/Invitations.svg";
+import Events from "/Events.svg";
+import Files from "/Files.svg";
+import Invitations from "/Invitations.svg";
 
-import Backdrop from "../../assets/Backdrop.svg";
-import Commercial from "../../assets/Commercial.svg";
-import Concert from "../../assets/Concert.svg";
-import IntroVids from "../../assets/IntroVids.svg";
-import ProjectVids from "../../assets/ProjectVids.svg";
+import Backdrop from "/Backdrop.svg";
+import Commercial from "/Commercial.svg";
+import Concert from "/Concert.svg";
+import IntroVids from "/IntroVids.svg";
+import ProjectVids from "/ProjectVids.svg";
 
-import ThreeDImage from "../../assets/ThreeDImage.svg";
-import ProductImage from "../../assets/ProductImage.svg";
-import Tshirt from "../../assets/Tshirt.svg";
-import WristBand from "../../assets/WristBand.svg";
+import ThreeDImage from "/ThreeDImage.svg";
+import ProductImage from "/ProductImage.svg";
+import Tshirt from "/Tshirt.svg";
+import WristBand from "/WristBand.svg";
 
 
 

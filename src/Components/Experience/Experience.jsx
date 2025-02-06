@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Experience.css';
 
-import serviceImageWeb from '../../assets/exweb.svg'; // Replace with your image
-import serviceImageUi from '../../assets/exui.svg';
-import serviceImageLogo from '../../assets/exlogo.svg';
-import serviceImagePoster from '../../assets/exposter.svg';
-import serviceImageEvent from '../../assets/exflyer.svg';
-import serviceImageVideo from '../../assets/exvideo.svg';
-import serviceImageProduct from '../../assets/exproduct.svg';
+import serviceImageWeb from '/exweb.svg'; // Replace with your image
+import serviceImageUi from '/exui.svg';
+import serviceImageLogo from '/exlogo.svg';
+import serviceImagePoster from '/exposter.svg';
+import serviceImageEvent from '/exflyer.svg';
+import serviceImageVideo from '/exvideo.svg';
+import serviceImageProduct from '/exproduct.svg';
 
 const Experience = () => {
   const [currentImage, setCurrentImage] = useState(serviceImageWeb); // Initially set to the first image

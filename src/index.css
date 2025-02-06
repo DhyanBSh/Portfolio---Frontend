@@ -7,7 +7,6 @@
 body {
     height: 100vh;
     background-color: #161513;
-    background-image: url('path_to_your_doodle_art_image.svg'); /* Add your doodle art background here */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
