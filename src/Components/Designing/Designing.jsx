@@ -1,5 +1,5 @@
 import React from "react";
-import "./DesigningTools.css";
+import "./Designing.css";
 
 const tools = [
   { src: "/photoshop.svg", alt: "Photoshop" },
