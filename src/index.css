@@ -77,27 +77,6 @@ img {
     transform: scale(1.05);
 }
 
-/* Add custom cursor styling if applicable */
-#custom-cursor {
-    width: 15px;
-    height: 15px;
-    background-color: #00fff7;
-    position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-}
-
-#cursor-border {
-    width: 30px;
-    height: 30px;
-    border: 2px solid #00fff7;
-    position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-}
-
 /* Additional styling adjustments */
 .container {
     padding: 20px;
