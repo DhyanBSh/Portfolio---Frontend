@@ -5,39 +5,39 @@ import "./projects.css";
 import logoImage from "/Dhyanlogo.svg";
 
 //Project Images
-import PixelWeb from "/PixelWeb.svg";
-import BandaCurry from "/BandaCurry.svg";
+import PixelWeb from "/PixelWeb.gif";
+import BandaCurry from "/BandaCurry.gif";
 
-import BabybobLogo from "/BabybobLogo.svg";
-import BULogo from "/BULogo.svg";
-import DramaLogo from "/DramaLogo.svg";
-import IntimateLogo from "/IntimateLogo.svg";
-import PhFLogo from "/PhFLogo.svg";
-import PMIELogo from "/PMIELogo.svg";
+import BabybobLogo from "/BabybobLogo.gif";
+import BULogo from "/BULogo.gif";
+import DramaLogo from "/DramaLogo.gif";
+import IntimateLogo from "/IntimateLogo.gif";
+import PhFLogo from "/PhFLogo.gif";
+import PMIELogo from "/PMIELogo.gif";
 import BigNutzLogo from "/BigNutzLogo.gif";
 
-import ChocoBanner from "/ChocoBanner.svg";
-import BusinessFlyers from "/BusinessFlyers.svg";
-import ClassFlyers from "/ClassFlyers.svg";
-import Magazines from "/Magazines.svg";
-import SimpleEvents from "/SimpleEvents.svg";
-import SpecialDays from "/SpecialDays.svg";
-import SpecialEvents from "/SpecialEvents.svg";
+import ChocoBanner from "/ChocoBanner.gif";
+import BusinessFlyers from "/BusinessFlyers.gif";
+import ClassFlyers from "/ClassFlyers.gif";
+import Magazines from "/Magazines.gif";
+import SimpleEvents from "/SimpleEvents.gif";
+import SpecialDays from "/SpecialDays.gif";
+import SpecialEvents from "/SpecialEvents.gif";
 
-import Events from "/Events.svg";
-import Files from "/Files.svg";
-import Invitations from "/Invitations.svg";
+import Events from "/Events.gif";
+import Files from "/Files.gif";
+import Invitations from "/Invitations.gif";
 
-import Backdrop from "/Backdrop.svg";
-import Commercial from "/Commercial.svg";
-import Concert from "/Concert.svg";
-import IntroVids from "/IntroVids.svg";
-import ProjectVids from "/ProjectVids.svg";
+import Backdrop from "/Backdrop.gif";
+import Commercial from "/Commercial.gif";
+import Concert from "/Concert.gif";
+import IntroVids from "/IntroVids.gif";
+import ProjectVids from "/ProjectVids.gif";
 
-import ThreeDImage from "/ThreeDImage.svg";
-import ProductImage from "/ProductImage.svg";
-import Tshirt from "/Tshirt.svg";
-import WristBand from "/WristBand.svg";
+import ThreeDImage from "/ThreeDImage.gif";
+import ProductImage from "/ProductImage.gif";
+import Tshirt from "/Tshirt.gif";
+import WristBand from "/WristBand.gif";
 
 
 
