@@ -4,9 +4,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 60px;
+    gap: 80px;
     margin: 80px 170px;
-    padding-top: 100px;
+    padding-top: 120px;
     transition: margin 0.3s ease;
 }
 
