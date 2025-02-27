@@ -14,6 +14,7 @@ import DramaLogo from "/DramaLogo.svg";
 import IntimateLogo from "/IntimateLogo.svg";
 import PhFLogo from "/PhFLogo.svg";
 import PMIELogo from "/PMIELogo.svg";
+import BigNutzLogo from "/BigNutzLogo.gif";
 
 import ChocoBanner from "/ChocoBanner.svg";
 import BusinessFlyers from "/BusinessFlyers.svg";
@@ -153,6 +154,16 @@ product-designing
       image:
       PMIELogo,
       link: "https://drive.google.com/drive/folders/1GBaqaXpA0_tcXNvk6JC6DOq7a-LIuzfw?usp=drive_link",
+      category: "logo-designs",
+    },
+
+    {
+      title: "BigNutz Logo",
+      description: "A logo for a cashewnut brand.",
+      technologies: ["Adobe Illustrator"],
+      image:
+      BigNutzLogo,
+      link: "https://drive.google.com/drive/folders/1JCdzdk1x5PKbg-xnYg5gUY3C6qrG_zum?usp=sharing",
       category: "logo-designs",
     },
 
