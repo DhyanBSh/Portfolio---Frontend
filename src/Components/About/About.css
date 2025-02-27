@@ -1,11 +1,12 @@
 .about {
+  transform: scale(0.9);
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 80px;
     margin: 80px;
-    padding-top: 160px;
+    padding-top: 30px;
   }
   
   .about-title {

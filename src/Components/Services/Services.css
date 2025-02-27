@@ -1,11 +1,12 @@
 .services {
+    transform: scale(0.9);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 80px;
-    margin: 120px 170px;
-    padding-top: 150px;
+    gap: 60px;
+    margin: 80px 170px;
+    padding-top: 100px;
     transition: margin 0.3s ease;
 }
 
