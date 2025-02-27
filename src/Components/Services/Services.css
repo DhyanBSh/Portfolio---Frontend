@@ -1,10 +1,9 @@
 .services {
-    transform: scale(0.9);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 80px;
+    gap: 40px;
     margin: 80px 170px;
     padding-top: 120px;
     transition: margin 0.3s ease;
@@ -91,21 +90,17 @@
 }
 
 .modal-content {
-    transform: scale(1);
-    transform-origin: top left;
     position: relative;
     background: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
     max-width: 90%; /* Responsive width */
     max-height: 90%; /* Ensure it doesn't overflow the viewport */
     overflow: hidden; /* Hide overflow */
 }
 
 .modal-content img {
-    transform: scale(1);
-    transform-origin: top left;
     width: auto;
     height: 80vh; /* Set height for portrait orientation */
     max-height: 4%; /* Limit max height */
