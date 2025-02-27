@@ -75,14 +75,12 @@
 
 /* Modal Styles */
 .modal {
-    transform: scale(1);
-    transform-origin: top left;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.562); /* Semi-transparent background */
     display: flex;
     justify-content: center;
     align-items: center;
