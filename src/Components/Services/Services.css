@@ -13,17 +13,10 @@
     filter: blur(10px); /* Blur effect on background */
 }
 
-.services-title {
+.services-title h1{
     position: relative;
-    text-align: center;
 }
 
-.services-title h1 {
-    font-size: 35px;
-    font-weight: 600;
-    padding: 0px 30px;
-    transition: font-size 0.3s ease; /* Smooth font size transition */
-}
 
 .service {
     display: flex;
@@ -187,7 +180,7 @@
     }
 
     .services-title h1 {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .services-container {
@@ -228,7 +221,7 @@
     }
 
     .services-title h1 {
-        font-size: 22px;
+        font-size: 30px;
     }
 
     .services-container {

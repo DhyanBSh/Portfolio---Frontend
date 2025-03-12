@@ -10,14 +10,8 @@
   cursor: pointer;
 }
 
-.experience-title {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.experience-title h1 {
-  font-size: 35px;
-  font-weight: 600;
+.experience-title h1{
+  position: relative;
 }
 
 .experience-container {
@@ -243,7 +237,7 @@
   }
 
   .experience-title h1 {
-    font-size: 25px; /* Smaller title font for mobile */
+    font-size: 30px; /* Smaller title font for mobile */
   }
 
   .experience-card h2 {
