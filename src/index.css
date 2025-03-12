@@ -14,6 +14,7 @@ body {
     background-attachment: fixed;
     color: white;
     font-family: "Fira Code", monospace;
+    font-size: 15px;
 }
 
 canvas {
