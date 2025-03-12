@@ -4,7 +4,6 @@
   padding-right: 20px;
   padding-top: 100px;
   text-align: center;
-  width: 100%;
   display: flex;
     justify-content: center;
     flex-direction: column;
@@ -74,7 +73,7 @@
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   max-width: 370px;
-  min-width: 370px;
+  min-width: auto;
   position: relative;
   height: 100%; /* Ensures full height is used for alignment */
 }
