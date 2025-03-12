@@ -72,7 +72,7 @@ product-designing
     
 
     {
-      title: "Banda Curry",
+      title: "Banda_Curry",
       description: "A Sri Lankan restourent based in Japan. The Design is inspired by the traditional Sri Lankan identity.",
       technologies: ["FIGMA, Canva, Adobe Photoshop"],
       image: BandaCurry,
@@ -93,7 +93,7 @@ product-designing
 
     {
      
-      title: "BaByBoB Logo",
+      title: "BaByBoB_Logo",
       description: "Logo for a small creative and web solution provider.",
       technologies: ["Adobe Photoshop, Adobe Illustrator, Canva"],
       image:
@@ -104,7 +104,7 @@ product-designing
     
     {
      
-      title: "BeeU Logo",
+      title: "BeeU_Logo",
       description: "Logo for a small online clothing business.",
       technologies: ["Canva, Adobe Photoshop"],
       image:
@@ -115,7 +115,7 @@ product-designing
 
     {
     
-      title: "Drama Logo",
+      title: "Drama_Logo",
       description: "A logo for the Drama club of KDU.",
       technologies: ["Adobe Photoshop"],
       image:
@@ -127,7 +127,7 @@ product-designing
 
     {
       
-      title: "Intimate Photography Logo",
+      title: "Intimate_Photography_Logo",
       description: "A simple logo for a photographer.",
       technologies: ["Canva, Adobe Photoshop"],
       image:
@@ -138,7 +138,7 @@ product-designing
 
     {
       
-      title: "PhF Logo",
+      title: "PhF_Logo",
       description: "A simple logo for a clothing business.",
       technologies: ["Adobe Photoshop, Canva"],
       image:
@@ -148,7 +148,7 @@ product-designing
     },
 
     {
-      title: "PMIE Logo",
+      title: "PMIE_Logo",
       description: "A simple logo for a association of an Advanced level Management students.",
       technologies: ["Adobe Photoshop"],
       image:
@@ -158,7 +158,7 @@ product-designing
     },
 
     {
-      title: "BigNutz Logo",
+      title: "BigNutz_Logo",
       description: "A logo for a cashewnut brand.",
       technologies: ["Adobe Illustrator"],
       image:
@@ -168,7 +168,7 @@ product-designing
     },
 
     {
-      title: "Web Banners",
+      title: "Web_Banners",
       description: "A set of web banner adverticements for a chocolate product.",
       technologies: ["Adobe Photoshop, Canva"],
       image:
@@ -178,7 +178,7 @@ product-designing
     },
 
     {
-      title: "Business Ads Posters",
+      title: "Business_Ads_Posters",
       description: "An adverticements for the businesses.",
       technologies: ["Adobe Photoshop, Canva"],
       image:
@@ -188,7 +188,7 @@ product-designing
     },
 
     {
-      title: "Tuition Class Flyers",
+      title: "Tuition_Class_Flyers",
       description: "Flyer designs for the tuition classes.",
       technologies: ["Adobe Photoshop, Canva"],
       image:
@@ -208,7 +208,7 @@ product-designing
     },
 
     {
-      title: "Simple Events",
+      title: "Simple_Events",
       description: "Creative designs for the simple events and projects.",
       technologies: ["Adobe Photoshop, Canva"],
       image:
@@ -218,7 +218,7 @@ product-designing
     },
 
     {
-      title: "Special Day Flyers",
+      title: "Special_Day_Flyers",
       description: "Creative designs for the special days.",
       technologies: ["Adobe Photoshop, Canva"],
       image:
@@ -228,7 +228,7 @@ product-designing
     },
 
     {
-      title: "Special Events",
+      title: "Special_Events",
       description: "Creative designs for the special events.",
       technologies: ["Adobe Photoshop, Canva"],
       image:
@@ -238,7 +238,7 @@ product-designing
     },
 
     {
-      title: "Concert PR",
+      title: "Concert_PR",
       description: "Creative designs for the concerts and special events.",
       technologies: ["Adobe Photoshop"],
       image:
@@ -248,7 +248,7 @@ product-designing
     },
 
     {
-      title: "Event PR",
+      title: "Event_PR",
       description: "Creative designs for the clong term events.",
       technologies: ["Adobe Photoshop"],
       image:
@@ -258,7 +258,7 @@ product-designing
     },
 
     {
-      title: "File Designs",
+      title: "File_Designs",
       description: "Creative file designs for the events and classes.",
       technologies: ["Adobe Photoshop"],
       image:
@@ -268,7 +268,7 @@ product-designing
     },
 
     {
-      title: "Invitations & Tokens",
+      title: "Invitations_&_Tokens",
       description: "Creative invitations and agenda designs for the events.",
       technologies: ["Adobe Photoshop, Canva"],
       image:
@@ -278,7 +278,7 @@ product-designing
     },
 
     {
-      title: "Screen Backdrops",
+      title: "Screen_Backdrops",
       description: "Creative backdrops and videos for the events.",
       technologies: ["Adobe After Effects, Adobe Premier Pro, Davinci Resolve"],
       image:
@@ -298,7 +298,7 @@ product-designing
     },
 
     {
-      title: "Concert PR",
+      title: "Concert_PR",
       description: "Creative videos for the promotions and commercials of concerts and musical events.",
       technologies: ["Adobe After Effects, Adobe Premier Pro, Davinci Resolve"],
       image:
@@ -308,7 +308,7 @@ product-designing
     },
 
     {
-      title: "Intro Videos",
+      title: "Intro_Videos",
       description: "Creative videos for the introductions of events.",
       technologies: ["Adobe After Effects, Adobe Premier Pro, Davinci Resolve"],
       image:
@@ -318,7 +318,7 @@ product-designing
     },
 
     {
-      title: "Project Promotion Videos",
+      title: "Project_Promotion_Videos",
       description: "Creative videos for the introductions and promotions of projects. (CSR Projects)",
       technologies: ["Adobe After Effects, Adobe Premier Pro, Davinci Resolve"],
       image:
@@ -328,7 +328,7 @@ product-designing
     },
 
     {
-      title: "3D Designs",
+      title: "3D_Designs",
       description: "Creative videos for the introductions and promotions of projects. (CSR Projects)",
       technologies: ["Blender"],
       image:
@@ -338,7 +338,7 @@ product-designing
     },
 
     {
-      title: "Product Designs",
+      title: "Product_Designs",
       description: "Creative product flyers and designs for promotions.",
       technologies: ["Blender, Adobe Photoshop"],
       image:
@@ -348,7 +348,7 @@ product-designing
     },
 
     {
-      title: "T-Shirt Designs",
+      title: "T-Shirt_Designs",
       description: "Creative T-shirt designs.",
       technologies: ["Adobe Photoshop, Blender"],
       image:
@@ -358,7 +358,7 @@ product-designing
     },
 
     {
-      title: "Wrist Band Designs",
+      title: "Wrist_Band_Designs",
       description: "Creative Wrist Band designs.",
       technologies: ["Adobe Photoshop, Blender"],
       image:
@@ -394,9 +394,9 @@ product-designing
   if (!filteredProjects.length) {
     return (
       <div className="projects-container">
-        <h1 className="projects-title">No Projects Found</h1>
+        <h1 className="projects-title">No_Projects_Found !</h1>
         <p className="no-projects-message">
-          Sorry, there are no projects available in this category.
+          Sorry, there are no projects available in this category ;
         </p>
       </div>
     );
@@ -420,7 +420,7 @@ product-designing
         </button>
       </div>
 
-      <h1 className="projects-title">Projects</h1>
+      <h1 className="projects-title">Completed_Projects</h1>
       <div className="projects-grid">
         {filteredProjects.map((project, index) => (
           <div key={project.id || index} className="project-card">
@@ -445,7 +445,7 @@ product-designing
                 className="project-link"
                 aria-label={`View details for ${project.title}`}
               >
-                View Project
+                View_Project
               </a>
             </div>
           </div>

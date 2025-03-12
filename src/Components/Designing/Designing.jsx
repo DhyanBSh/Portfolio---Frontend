@@ -15,7 +15,7 @@ const tools = [
 const Designing = () => {
   return (
     <div className="pb-24">
-      <h2 className="designing-tools-title">Designing Tools</h2>
+      <h2 className="designing-tools-title">Designing_Tools</h2>
       <div className="flex flex-wrap items-center justify-center gap-4">
         {tools.map((tool, index) => (
           <div key={index} className="p-4">

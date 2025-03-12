@@ -16,7 +16,7 @@ const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false); // State to track authentication
   const sectionsRef = {
     Home: useRef(null),
-    AboutMe: useRef(null),
+    About_Me: useRef(null),
     Services: useRef(null),
     Portfolio: useRef(null),
     Contact: useRef(null),
@@ -37,7 +37,7 @@ const App = () => {
               <CursorEffect />
               <NavBar sectionsRef={sectionsRef} />
               <div ref={sectionsRef.Home}><Home /></div>
-              <div ref={sectionsRef.AboutMe}><About /></div>
+              <div ref={sectionsRef.About_Me}><About /></div>
               <div ref={sectionsRef.Services}><Services /></div>
               <div ref={sectionsRef.Portfolio}><Experience /></div>
               <div ref={sectionsRef.Contact}><Contact /></div>

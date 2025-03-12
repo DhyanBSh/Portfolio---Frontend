@@ -83,12 +83,12 @@ const Contact = () => {
   return (
     <div id='Contact' className='contact'>
       <div className="contact-title">
-        <h1>Contact Me</h1>
+        <h1>Contact_Me</h1>
       </div>
 
       <div className="contact-section">
         <div className="contact-left">
-          <h1>Let's talk...</h1>
+          <h1>Let's_talk...</h1>
           <p>Let’s Create Something Great Together!</p>
           <p>Feel free to reach out for any inquiries, collaborations, or just to say hello. I’d love to hear from you!</p>
           <div className="contact-details">
@@ -125,13 +125,13 @@ const Contact = () => {
         </div>
         <form onSubmit={onSubmit} className="contact-right">
           <label htmlFor="">Name</label>
-          <input type="text" placeholder="Enter your name" name='name' value={name} onChange={handleChange} />
+          <input type="text" placeholder="Enter_your_name ;" name='name' value={name} onChange={handleChange} />
 
           <label htmlFor="">Email</label>
-          <input type="email" placeholder="Enter your email" name='email' value={email} onChange={handleChange} />
+          <input type="email" placeholder="Enter_your_email ;" name='email' value={email} onChange={handleChange} />
 
           <label htmlFor="">Message</label>
-          <textarea name="message" rows="8" placeholder="How can I create your idea" value={message} onChange={handleChange}></textarea>
+          <textarea name="message" rows="8" placeholder="How_can_I_create_your_idea ;" value={message} onChange={handleChange}></textarea>
 
           {errorMessage && <p className="error-message">{errorMessage}</p>}
           {successMessage && <p className="success-message">{successMessage}</p>}

@@ -4,15 +4,16 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
 body {
-    
     height: 100vh;
     background-color: #161513;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    font-family: 'Outfit', sans-serif;
+    font-family: "Fira Code", monospace;
 }
 
 canvas {

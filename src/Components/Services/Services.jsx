@@ -16,13 +16,13 @@ const Services = () => {
   const [selectedService, setSelectedService] = useState(null);
 
   const services = [
-    { title: 'Web Development', description: 'Full stack web development', img: serviceImageWeb , pdfUrl: "https://drive.google.com/file/d/1w3iN1llEEfqAXQYETh8X_knv_bAFXx8j/view?usp=sharing"},
-    { title: 'UI Designs', description: 'UI designs for web & mobile applications', img: serviceImageUi , pdfUrl: "https://drive.google.com/file/d/1myFWuvhWonfLfv197D-tPrDqkUm-vGnz/view?usp=sharing"},
-    { title: 'Logo Designs', description: 'Crafting unique, memorable logos...', img: serviceImageLogo , pdfUrl: "https://drive.google.com/file/d/1iCsEi_HgnleRXIiCRpbJJFhnSKwEvTzQ/view?usp=sharing"},
-    { title: 'Poster / Banner Designs', description: 'Creating impactful flyers...', img: serviceImagePoster , pdfUrl: "https://drive.google.com/file/d/14A25uTlBPvr97PdPN6gNaMcEZumTe2qZ/view?usp=sharing"},
-    { title: 'Event Flyer Designs', description: 'Capturing the greatest moments...', img: serviceImageEvent , pdfUrl: "https://drive.google.com/file/d/1U38mhSDLD50gCSxl3pxj5dN6AV2VDOd1/view?usp=sharing"},
-    { title: 'Video Editing', description: 'Producing creative, high-quality videos...', img: serviceImageVideo , pdfUrl: "https://drive.google.com/file/d/195L9-nsEUA_n1YeKy1ReKzlW-cWkSc0E/view?usp=sharing"},
-    { title: 'Product Designs', description: 'Producing creative, 3D models...', img: serviceImageProduct , pdfUrl: "https://drive.google.com/file/d/1ROhcPBFNgHrCbTqqcrvPJfdNZvW4r43k/view?usp=sharing"},
+    { title: 'Web_Development', description: 'Full stack web development...', img: serviceImageWeb , pdfUrl: "https://drive.google.com/file/d/1w3iN1llEEfqAXQYETh8X_knv_bAFXx8j/view?usp=sharing"},
+    { title: 'UI_Designs', description: 'UI designs for web & mobile applications...', img: serviceImageUi , pdfUrl: "https://drive.google.com/file/d/1myFWuvhWonfLfv197D-tPrDqkUm-vGnz/view?usp=sharing"},
+    { title: 'Logo_Designs', description: 'Crafting unique, memorable logos...', img: serviceImageLogo , pdfUrl: "https://drive.google.com/file/d/1iCsEi_HgnleRXIiCRpbJJFhnSKwEvTzQ/view?usp=sharing"},
+    { title: 'Poster / Banner_Designs', description: 'Creating impactful flyers...', img: serviceImagePoster , pdfUrl: "https://drive.google.com/file/d/14A25uTlBPvr97PdPN6gNaMcEZumTe2qZ/view?usp=sharing"},
+    { title: 'Event_Flyer_Designs', description: 'Capturing the greatest moments...', img: serviceImageEvent , pdfUrl: "https://drive.google.com/file/d/1U38mhSDLD50gCSxl3pxj5dN6AV2VDOd1/view?usp=sharing"},
+    { title: 'Video_Editing', description: 'Producing creative, high-quality videos...', img: serviceImageVideo , pdfUrl: "https://drive.google.com/file/d/195L9-nsEUA_n1YeKy1ReKzlW-cWkSc0E/view?usp=sharing"},
+    { title: 'Product_Designs', description: 'Producing creative, 3D models...', img: serviceImageProduct , pdfUrl: "https://drive.google.com/file/d/1ROhcPBFNgHrCbTqqcrvPJfdNZvW4r43k/view?usp=sharing"},
   ];
 
   const handleServiceClick = (service) => {
@@ -59,7 +59,7 @@ const Services = () => {
   return (
     <div id='Services' className="services">
       <div className="services-title">
-        <h1>My Services</h1>
+        <h1>My_Services</h1>
       </div>
 
       <div className="services-container">
@@ -86,7 +86,7 @@ const Services = () => {
           <div className="modal-content">
             <img src={selectedService.img} alt={selectedService.title} />
             <div className="button-container">
-              <button className="send-message" onClick={scrollToContact}>Send Message</button>
+              <button className="send-message" onClick={scrollToContact}>Send_Message</button>
               <img src={downloadIcon} alt="Download" className="download-icon" onClick={handleDownload} />
             </div>
             <img src={closeIcon} alt="Close" className="close-icon" onClick={handleCloseModal} />

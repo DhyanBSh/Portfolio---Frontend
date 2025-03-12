@@ -29,7 +29,7 @@ const NavBar = ({ sectionsRef }) => {
 
       {/* Navigation Menu */}
       <nav className={`nav-menu ${isMobileMenuOpen ? 'open' : ''}`}>
-        {['Home', 'AboutMe', 'Services', 'Portfolio', 'Contact'].map((item, index) => (
+        {['Home', 'About_Me', 'Services', 'Portfolio', 'Contact'].map((item, index) => (
           <li
             key={index}
             className={activeItem === item ? 'active' : ''} // Active class for the current section

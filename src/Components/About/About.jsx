@@ -9,12 +9,12 @@ const About = () => {
     <div id="AboutMe" className="about" data-cursor="pointer2">
       
       <div className="about-title">
-        <h1>About Me</h1>
+        <h1>About_Me</h1>
       </div>
 
       <div className="about-section">
         <div className="about-para">
-          <h1>Software Development</h1>
+          <h1>Software_Development</h1>
           <p>
             I develop clean, efficient software with a focus on simple, user-friendly interfaces. I’m skilled in both front-end and back-end development, ensuring smooth and intuitive user experiences. I also enjoy creating attractive and functional UI designs that are easy to use.
           </p>
@@ -59,7 +59,7 @@ const About = () => {
 
       <div className="about-section">
         <div className="about-para">
-          <h1>Graphic Designing</h1>
+          <h1>Graphic_Designing</h1>
           <p>
             I design attractive, simple, and clean UI interfaces, along with creative and detailed graphics such as flyer designs, banner designs, event screens, logo designs, and card designs. In addition to graphic work, I also produce engaging and creative videos that bring ideas to life through visual storytelling.
           </p>
