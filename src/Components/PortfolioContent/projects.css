@@ -257,13 +257,42 @@
   }
 }
 
-  @media (max-width: 370px) {
+  @media (max-width: 400px) {
+
+    .projects-grid {
+      grid-template-columns: 1fr; /* Display 1 card per row on mobile */
+      gap: 30px; /* Reduced gap between cards on mobile */
+    }
+  
+    .projects-title {
+      padding-top: 20px;
+      font-size: 1.6rem; /* Smaller title font on mobile */
+    }
+  
+    .project-card {
+      max-width: 100%;
+    }
+  
+ 
+    .project-details h2 {
+      font-size: 1rem; /* Smaller project title on mobile */
+    }
+  
+    .project-details p {
+      font-size: 0.8rem; /* Smaller description text on mobile */
+    }
+  
+    .project-link {
+      padding: 8px 12px; /* Smaller button padding on mobile */
+      font-size: 0.8rem; /* Smaller button font on mobile */
+    }
+  
 
     .logo {
       height: auto;
       object-fit: contain;
-      margin: 10px 5px;
-      max-width: 100px;
+      margin: 10px 15px;
+      max-width: 120px;
     }
 
   }

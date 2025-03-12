@@ -187,7 +187,7 @@
   @media (max-width: 480px) {
     .about {
       margin: 20px 20px;
-      padding-top: 150px;
+      padding-top: 0px;
     }
   
     .about-para {
