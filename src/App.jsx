@@ -9,6 +9,7 @@ import Experience from './Components/Experience/Experience';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import Projects from './Components/PortfolioContent/projects';
+import RecentProjects from './Components/Recent/RecentProjects';
 import './index.css';
 import CursorEffect from './Components/CursorEffect/CursorEffect';
 
@@ -16,6 +17,7 @@ const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false); // State to track authentication
   const sectionsRef = {
     Home: useRef(null),
+    RecentProjects: useRef(null),
     About_Me: useRef(null),
     Services: useRef(null),
     Portfolio: useRef(null),
@@ -37,6 +39,7 @@ const App = () => {
               <CursorEffect />
               <NavBar sectionsRef={sectionsRef} />
               <div ref={sectionsRef.Home}><Home /></div>
+              <div ref={sectionsRef.RecentProjects}><RecentProjects /></div>
               <div ref={sectionsRef.About_Me}><About /></div>
               <div ref={sectionsRef.Services}><Services /></div>
               <div ref={sectionsRef.Portfolio}><Experience /></div>

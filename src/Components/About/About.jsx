@@ -32,7 +32,7 @@ const About = () => {
           <div className="about-skill">
             <p>React</p>
             <hr style={{ width: "80%" }} />
-            <span className="percentage">80%</span>
+            <span className="percentage">60%</span>
           </div>
           <div className="about-skill">
             <p>JavaScript</p>
@@ -93,12 +93,12 @@ const About = () => {
           <div className="about-skill">
             <p>Adobe Premiere Pro</p>
             <hr style={{ width: "90%" }} />
-            <span className="percentage">90%</span>
+            <span className="percentage">80%</span>
           </div>
           <div className="about-skill">
             <p>Adobe After Effects</p>
             <hr style={{ width: "80%" }} />
-            <span className="percentage">80%</span>
+            <span className="percentage">70%</span>
           </div>
           <div className="about-skill">
             <p>DaVinci Resolve</p>
@@ -120,12 +120,12 @@ const About = () => {
         </div>
         <hr />
         <div className="about-achievement">
-          <h1>15+</h1>
+          <h1>20+</h1>
           <p>Visual Creation Projects</p>
         </div>
         <hr />
         <div className="about-achievement">
-          <h1>25+</h1>
+          <h1>30+</h1>
           <p>Designing Projects</p>
         </div>
       </div>

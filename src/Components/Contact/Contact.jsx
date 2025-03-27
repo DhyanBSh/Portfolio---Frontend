@@ -7,6 +7,7 @@ import github_icon from '/github.svg';
 import linkedin_icon from '/linkedin.svg';
 import instagram_icon from '/instagram.svg';
 import facebook_icon from '/facebook.svg';
+import behance_icon from '/behance.png';
 
 const Contact = () => {
   const [errorMessage, setErrorMessage] = useState('');
@@ -109,6 +110,11 @@ const Contact = () => {
             <div className="details">
               <a href="https://www.linkedin.com/in/dhyan-jayasinghe-697324228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
                 <img src={linkedin_icon} alt="LinkedIn" /><p>Dhyan Jayasinghe</p>
+              </a>
+            </div>
+            <div className="details">
+              <a href="https://www.behance.net/dhyanbhashitha" target="_blank" rel="noopener noreferrer">
+                <img src={behance_icon} alt="LinkedIn" /><p>Dhyan Bhashitha</p>
               </a>
             </div>
             <div className="details">
