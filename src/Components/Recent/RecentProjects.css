@@ -32,13 +32,6 @@
     display: block;
   }
   
-  .project-title {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: #00FFF7;
-    font-weight: bold;
-  }
   
   .project-card.active {
     transform: scale(1.1);

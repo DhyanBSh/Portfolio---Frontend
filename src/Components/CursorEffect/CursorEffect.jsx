@@ -1,102 +1,106 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef, useEffect } from 'react';
+import './CursorEffect.css';
 
 const CursorEffect = () => {
   const canvasRef = useRef(null);
+  const mousePos = useRef({ x: -1000, y: -1000 });
+  const smoothedMouse = useRef({ x: -1000, y: -1000 });
+  const pixels = [];
+  const pixelSize = 6;
+  const gap = 2;
+  const randomGlowDuration = 1000; // ms
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const ctx = canvas.getContext("2d");
+    const ctx = canvas.getContext('2d');
 
-    const width = window.innerWidth;
-    const height = window.innerHeight;
-
-    canvas.width = width;
-    canvas.height = height;
-
-    // Adjust points count for mobile view
-    const isMobile = window.innerWidth <= 768; // You can adjust this threshold if needed
-    const pointsCount = isMobile ? 40 : 70; // Reduce points on mobile
-    const pointSize = 1.5;
-    const lineDistance = 130;
-
-    // Points array
-    const points = Array.from({ length: pointsCount }).map(() => ({
-      x: Math.random() * width,
-      y: Math.random() * height,
-      dx: Math.random() * 0.5 - 0.4, // Reduced speed
-      dy: Math.random() * 0.5 - 0.25,
-    }));
-
-    // Cursor position
-    const cursor = { x: null, y: null };
-
-    // Mouse move event
-    const handleMouseMove = (e) => {
-      cursor.x = e.clientX;
-      cursor.y = e.clientY;
+    const resize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      initPixels();
     };
 
-    window.addEventListener("mousemove", handleMouseMove);
+    const initPixels = () => {
+      pixels.length = 0;
+      for (let y = 0; y < canvas.height; y += pixelSize + gap) {
+        for (let x = 0; x < canvas.width; x += pixelSize + gap) {
+          pixels.push({ x, y, glow: 0, random: false, timestamp: 0 });
+        }
+      }
+    };
 
-    // Animation loop
-    const animate = () => {
-      ctx.clearRect(0, 0, width, height);
+    const lerp = (a, b, t) => a + (b - a) * t;
 
-      // Draw and move points
-      points.forEach((point) => {
-        // Draw the point
-        ctx.beginPath();
-        ctx.arc(point.x, point.y, pointSize, 0, Math.PI * 2);
-        ctx.fillStyle = "#00FFF7";
-        ctx.fill();
+    const update = (time) => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-        // Move the point
-        point.x += point.dx;
-        point.y += point.dy;
+      // Smooth the mouse movement
+      smoothedMouse.current.x = lerp(smoothedMouse.current.x, mousePos.current.x, 0.1);
+      smoothedMouse.current.y = lerp(smoothedMouse.current.y, mousePos.current.y, 0.1);
 
-        // Bounce on edges
-        if (point.x < 0 || point.x > width) point.dx *= -1;
-        if (point.y < 0 || point.y > height) point.dy *= -1;
+      pixels.forEach((pixel) => {
+        const dx = smoothedMouse.current.x - pixel.x;
+        const dy = smoothedMouse.current.y - pixel.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
 
-        // Draw lines to nearby points and cursor
-        points.forEach((otherPoint) => {
-          const distance = Math.hypot(point.x - otherPoint.x, point.y - otherPoint.y);
-          if (distance < lineDistance) {
-            ctx.beginPath();
-            ctx.moveTo(point.x, point.y);
-            ctx.lineTo(otherPoint.x, otherPoint.y);
-            ctx.strokeStyle = `rgba(0, 500, 255, ${1 - distance / lineDistance})`;
-            ctx.lineWidth = 0.4;
-            ctx.stroke();
-          }
-        });
+        let targetGlow = 0;
+        if (distance < 100) {
+          targetGlow = 1 - distance / 100;
+        }
 
-        // Line to cursor
-        if (cursor.x && cursor.y) {
-          const distanceToCursor = Math.hypot(point.x - cursor.x, point.y - cursor.y);
-          if (distanceToCursor < lineDistance) {
-            ctx.beginPath();
-            ctx.moveTo(point.x, point.y);
-            ctx.lineTo(cursor.x, cursor.y);
-            ctx.strokeStyle = `rgba(0, 500, 255, ${1 - distanceToCursor / lineDistance})`;
-            ctx.lineWidth = 0.8;
-            ctx.stroke();
+        if (pixel.random) {
+          if (time - pixel.timestamp > randomGlowDuration) {
+            pixel.random = false;
+          } else {
+            targetGlow = Math.max(targetGlow, 0.5);
           }
         }
+
+        // Smooth glow transition
+        pixel.glow = lerp(pixel.glow, targetGlow, 0.08);
+
+        const color = pixel.glow > 0
+          ? `rgba(0, 255, 247, ${pixel.glow})`
+          : 'rgba(120, 120, 120, 0.08)';
+
+        ctx.fillStyle = color;
+        ctx.fillRect(pixel.x, pixel.y, pixelSize, pixelSize);
       });
 
-      requestAnimationFrame(animate);
+      requestAnimationFrame(update);
     };
 
-    animate();
+    const handleMove = (e) => {
+      const touch = e.touches ? e.touches[0] : e;
+      mousePos.current = { x: touch.clientX, y: touch.clientY };
+    };
 
-    // Cleanup
+    const randomizeGlow = () => {
+      const count = Math.floor(pixels.length * 0.02); // 2% randomly glow
+      for (let i = 0; i < count; i++) {
+        const pixel = pixels[Math.floor(Math.random() * pixels.length)];
+        pixel.random = true;
+        pixel.timestamp = performance.now();
+      }
+    };
+
+    resize();
+    window.addEventListener('resize', resize);
+    window.addEventListener('mousemove', handleMove);
+    window.addEventListener('touchmove', handleMove, { passive: true });
+
+    const glowInterval = setInterval(randomizeGlow, 1500);
+    requestAnimationFrame(update);
+
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
+      clearInterval(glowInterval);
+      window.removeEventListener('resize', resize);
+      window.removeEventListener('mousemove', handleMove);
+      window.removeEventListener('touchmove', handleMove);
     };
   }, []);
 
-  return <canvas ref={canvasRef} style={{ position: "fixed", top: 0, left: 0, zIndex: -1 }} />;
+  return <canvas ref={canvasRef} className="cursor-effect-canvas" />;
 };
 
 export default CursorEffect;
