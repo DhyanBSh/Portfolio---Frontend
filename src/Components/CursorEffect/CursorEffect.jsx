@@ -192,28 +192,6 @@ const CursorEffect = () => {
       pixel.duration = Math.random() * 2000 + 1000;
     };
 
-    // === SETUP AUDIO ANALYZER ===
-    const setupAudio = async () => {
-      try {
-        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        const source = audioCtx.createMediaStreamSource(stream);
-        const analyser = audioCtx.createAnalyser();
-
-        analyser.fftSize = 256;
-        const bufferLength = analyser.frequencyBinCount;
-        const dataArray = new Uint8Array(bufferLength);
-
-        source.connect(analyser);
-        analyserRef.current = analyser;
-        dataArrayRef.current = dataArray;
-        audioEnabled.current = true;
-      } catch (err) {
-        console.warn('Microphone access denied or not available:', err);
-      }
-    };
-
-    setupAudio();
 
     resize();
     window.addEventListener('resize', resize);
