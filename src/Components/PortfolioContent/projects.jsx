@@ -19,7 +19,6 @@ import BigNutzLogo from "/BigNutzLogo.gif";
 import ChocoBanner from "/ChocoBanner.gif";
 import BusinessFlyers from "/BusinessFlyers.gif";
 import ClassFlyers from "/ClassFlyers.gif";
-import Magazines from "/Magazines.gif";
 import SimpleEvents from "/SimpleEvents.gif";
 import SpecialDays from "/SpecialDays.gif";
 import SpecialEvents from "/SpecialEvents.gif";
@@ -34,6 +33,7 @@ import Concert from "/Concert.gif";
 import IntroVids from "/IntroVids.gif";
 import ProjectVids from "/ProjectVids.gif";
 
+import Magazines from "/Magazines.gif";
 import ThreeDImage from "/ThreeDImage.gif";
 import ProductImage from "/ProductImage.gif";
 import Tshirt from "/Tshirt.gif";
@@ -198,16 +198,6 @@ product-designing
     },
 
     {
-      title: "Magazines",
-      description: "Magazine & newsletter designs.",
-      technologies: ["Adobe Photoshop, Canva"],
-      image:
-      Magazines,
-      link: "https://drive.google.com/drive/folders/1JvDm7QajyNaN_v7WSFafllpBO3fRrWhm?usp=drive_link",
-      category: "poster-designs",
-    },
-
-    {
       title: "Simple_Events",
       description: "Creative designs for the simple events and projects.",
       technologies: ["Adobe Photoshop, Canva"],
@@ -325,6 +315,16 @@ product-designing
       ProjectVids,
       link: "https://drive.google.com/drive/folders/1o7GJwB9QdyJG4_qKgDV8APzsUbpAEDqJ?usp=drive_link",
       category: "video-editing",
+    },
+
+    {
+      title: "Magazines",
+      description: "Magazine & newsletter designs.",
+      technologies: ["Adobe Photoshop, Adobe Illustrator, Canva"],
+      image:
+      Magazines,
+      link: "https://drive.google.com/drive/folders/1JvDm7QajyNaN_v7WSFafllpBO3fRrWhm?usp=drive_link",
+      category: "product-designing",
     },
 
     {
