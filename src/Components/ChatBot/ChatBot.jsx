@@ -131,7 +131,7 @@ const ChatBot = () => {
       </button>
 
       {isOpen && (
-        <Draggable cancel=".chatbot-input input">
+        <Draggable cancel=".chatbot-input input, .chatbot-input button">
           <div className="chatbot-window">
             <div className="chatbot-header">Chat with BoB...</div>
             <div className="chatbot-messages" ref={chatRef}>
