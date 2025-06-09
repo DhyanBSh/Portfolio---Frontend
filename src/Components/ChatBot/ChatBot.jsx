@@ -13,7 +13,7 @@ const rawData = [
   },
   {
     question: "Hello",
-    variants: ["hello", "hi", "hey", "hiya", "good morning", "good afternoon"],
+    variants: ["hello", "hi", "hii", "hey", "hiya", "good morning", "good afternoon"],
     answers: ["Hi there! 👋", "Hello! How can I help you today?"]
   },
   {
@@ -131,7 +131,7 @@ const ChatBot = () => {
       </button>
 
       {isOpen && (
-        <Draggable>
+        <Draggable cancel=".chatbot-input input">
           <div className="chatbot-window">
             <div className="chatbot-header">Chat with BoB...</div>
             <div className="chatbot-messages" ref={chatRef}>
