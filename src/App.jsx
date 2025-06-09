@@ -12,6 +12,8 @@ import Projects from './Components/PortfolioContent/projects';
 import RecentProjects from './Components/Recent/RecentProjects';
 import './index.css';
 import CursorEffect from './Components/CursorEffect/CursorEffect';
+import Chatbot from './Components/ChatBot/ChatBot';
+
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false); // State to track authentication
@@ -38,6 +40,7 @@ const App = () => {
             <>
               <CursorEffect />
               <NavBar sectionsRef={sectionsRef} />
+              <Chatbot />
               <div ref={sectionsRef.Home}><Home /></div>
               <div ref={sectionsRef.RecentProjects}><RecentProjects /></div>
               <div ref={sectionsRef.About_Me}><About /></div>
@@ -45,6 +48,7 @@ const App = () => {
               <div ref={sectionsRef.Portfolio}><Experience /></div>
               <div ref={sectionsRef.Contact}><Contact /></div>
               <Footer />
+              
             </>
           }
         />

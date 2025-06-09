@@ -4,8 +4,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 80px;
-    margin: 80px 170px;
+    gap:80px;
+    margin: 10px 170px;
     padding-top: 100px;
 }
 
@@ -237,4 +237,3 @@
     font-size: 14px;
     margin-top: 10px;
   }
-  
