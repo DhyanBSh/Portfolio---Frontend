@@ -100,7 +100,7 @@ const Contact = () => {
               <img src={call_icon} alt="" /><p>+94 76 393 2043</p>
             </div>
             <div className="details">
-              <img src={location_icon} alt="Location" /><p>Rathmalana, Sri Lanka</p>
+              <img src={location_icon} alt="Location" /><p>Matara, Sri Lanka</p>
             </div>
             <div className="details">
               <a href="https://github.com/DhyanBSh" target="_blank" rel="noopener noreferrer">

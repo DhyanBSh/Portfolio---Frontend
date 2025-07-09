@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Experience.css";
 
-import serviceImageWeb from "/exweb.svg";
+// import serviceImageWeb from "/exweb.svg";
 import serviceImageUi from "/exui.svg";
 import serviceImageLogo from "/exlogo.svg";
 import serviceImagePoster from "/exposter.svg";
@@ -11,7 +11,7 @@ import serviceImageVideo from "/exvideo.svg";
 import serviceImageProduct from "/exproduct.svg";
 
 const Experience = () => {
-  const [currentImage, setCurrentImage] = useState(serviceImageWeb);
+  const [currentImage, setCurrentImage] = useState(serviceImagePoster);
   const [clickedCard, setClickedCard] = useState(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const navigate = useNavigate();
@@ -25,12 +25,12 @@ const Experience = () => {
   }, []);
 
   const experiences = [
-    {
-      title: "Web_Development",
-      description: "Full stack web development",
-      img: serviceImageWeb,
-      path: "/projects/web-development",
-    },
+    // {
+    //   title: "Web_Development",
+    //   description: "Full stack web development",
+    //   img: serviceImageWeb,
+    //   path: "/projects/web-development",
+    // },
     {
       title: "UI_Designs",
       description: "UI designs for web & mobile applications",

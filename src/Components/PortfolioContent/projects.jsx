@@ -7,6 +7,9 @@ import logoImage from "/Dhyanlogo.svg";
 //Project Images
 import PixelWeb from "/PixelWeb.gif";
 import BandaCurry from "/BandaCurry.gif";
+import Dialog from "/Dialog.gif";
+import Oliee from "/Oliee.gif";
+import Growva from "/Growva.gif";
 
 import BabybobLogo from "/BabybobLogo.gif";
 import BULogo from "/BULogo.gif";
@@ -72,7 +75,7 @@ product-designing
     
 
     {
-      title: "Banda_Curry",
+      title: "Bandara_Lanka Restaurent",
       description: "A Sri Lankan restourent based in Japan. The Design is inspired by the traditional Sri Lankan identity.",
       technologies: ["FIGMA, Canva, Adobe Photoshop"],
       image: BandaCurry,
@@ -88,6 +91,36 @@ product-designing
       image: PixelWeb,
       link:
         "https://drive.google.com/drive/folders/1akOyJeFWK6OSNkpYiXmFSPj4rlwg8tXx?usp=sharing",
+      category: "ui-designs",
+    },
+
+    {
+      title: "Oliee_PetMall",
+      description: "Web site for a small creative and web solution provider.",
+      technologies: ["FIGMA, Canva"],
+      image: Oliee,
+      link:
+        "https://drive.google.com/drive/folders/1EuPs3QgUm4HCRP2UhI1G2OZ7M1YmTk9y?usp=sharing",
+      category: "ui-designs",
+    },
+
+    {
+      title: "Dialog_App_Redesign",
+      description: "Web site for a small creative and web solution provider.",
+      technologies: ["FIGMA, Canva"],
+      image: Dialog,
+      link:
+        "https://drive.google.com/drive/folders/12ZYogL4_EETqf_b6eaWxkJUOFrTi3KA2?usp=sharing",
+      category: "ui-designs",
+    },
+
+    {
+      title: "Growva_Mobile_App",
+      description: "Web site for a small creative and web solution provider.",
+      technologies: ["FIGMA"],
+      image: Growva,
+      link:
+        "https://drive.google.com/drive/folders/1Jc3YT0j1HXIkGOtWCguux3Y5P9wDt_h5?usp=sharing",
       category: "ui-designs",
     },
 

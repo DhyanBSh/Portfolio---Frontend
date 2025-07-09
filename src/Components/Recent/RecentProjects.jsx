@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './RecentProjects.css';
-import project1 from '/BigNutzLogo.gif';
+
+import project1 from '/Dialog.gif';
 import project2 from '/BandaCurry.gif';
-import project3 from '/Files.gif';
+import project3 from '/LogisticsTimes.gif';
 
 const projects = [
   { id: 1,  image: project1 },

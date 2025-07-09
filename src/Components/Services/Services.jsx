@@ -3,7 +3,7 @@ import './Services.css';
 import closeIcon from '/close.png';
 import downloadIcon from '/download.png';
 
-import serviceImageWeb from '/WebDesignPackages.png';
+// import serviceImageWeb from '/WebDesignPackages.png';
 import serviceImageUi from '/UiDesignPackages.png';
 import serviceImageLogo from '/LogoDesignPackages.png';
 import serviceImagePoster from '/Poster_BannerDesignPackages.png';
@@ -16,7 +16,7 @@ const Services = () => {
   const [selectedService, setSelectedService] = useState(null);
 
   const services = [
-    { title: 'Web_Development', description: 'Full stack web development...', img: serviceImageWeb , pdfUrl: "https://drive.google.com/file/d/1w3iN1llEEfqAXQYETh8X_knv_bAFXx8j/view?usp=sharing"},
+    // { title: 'Web_Development', description: 'Full stack web development...', img: serviceImageWeb , pdfUrl: "https://drive.google.com/file/d/1w3iN1llEEfqAXQYETh8X_knv_bAFXx8j/view?usp=sharing"},
     { title: 'UI_Designs', description: 'UI designs for web & mobile applications...', img: serviceImageUi , pdfUrl: "https://drive.google.com/file/d/1myFWuvhWonfLfv197D-tPrDqkUm-vGnz/view?usp=sharing"},
     { title: 'Logo_Designs', description: 'Crafting unique, memorable logos...', img: serviceImageLogo , pdfUrl: "https://drive.google.com/file/d/1iCsEi_HgnleRXIiCRpbJJFhnSKwEvTzQ/view?usp=sharing"},
     { title: 'Poster / Banner_Designs', description: 'Creating impactful flyers...', img: serviceImagePoster , pdfUrl: "https://drive.google.com/file/d/14A25uTlBPvr97PdPN6gNaMcEZumTe2qZ/view?usp=sharing"},
